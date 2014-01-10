@@ -4,7 +4,7 @@
 __author__ =  "Max R. Berrios"
 __date__= "Jan 10, 2014"
 __email__ = "max.berrios@upr.edu"
-__version__= ""
+__version__= "0.1"
 #================================================
 
 #!usr/bin/python2.7
