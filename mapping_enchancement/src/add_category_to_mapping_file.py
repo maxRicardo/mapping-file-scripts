@@ -80,7 +80,7 @@ def parse_category_from_file(cat_fp):
 import unittest
 class Test(unittest.TestCase):
     
-    cat_fp = "test/cat_file.csv"
+    cat_fp = "../test/cat_file.csv"
     print cat_fp
     
     cat_mapping,category_head = parse_category_from_file(cat_fp)
@@ -95,9 +95,10 @@ class Test(unittest.TestCase):
         self.assertTrue(type(self.cat_mapping)== list," Something weird with the format of the mapping")
         self.assertTrue(type(self.category_head)== str,"Something is quite odd with the header")
         
-        test_list = ["cat","cow","sheep","crow","dog"]
-        head_test  = "Animals" 
+        test_list = ["RED","RED","BLACK","BLACK","BLACK","BLACK","RED","RED"]
+        head_test  = "RAT_EYES" 
         
+        #information and manipulation testing
         self.assertEqual(head_test,self.category_head, "reading problems again")
         self.assertListEqual(test_list, self.cat_mapping, "None equal somethings wrong with the parsing")
         pass
